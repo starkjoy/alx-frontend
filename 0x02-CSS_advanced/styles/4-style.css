@@ -1,0 +1,40 @@
+html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Hide elements with the class visually-hidden */
+  .visually-hidden {
+    display: none;
+  }
+
+  /* Define custom properties on the root element */
+:root {
+    --color-primary: #d73953;
+    --color-black: #090909;
+    --color-white: #ffffff;
+    --color-light-grey: #f3f3f3;
+    --color-dark-grey: #353535;
+    --text-color: var(--color-black); /* Set text-color to color-black */
+    --font-family-base: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --font-family-title: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+  
+  /* Reset section-tagline and card-category color to color-primary */
+  .section-tagline, .card-category {
+    color: var(--color-primary);
+  }
+  
+  /* Reset body and anchor color to text-color */
+  body {
+    color: var(--text-color);
+    font-family: var(--font-family-base);
+  }
+  
+  a {
+    color: var(--text-color);
+  }
+
+  section > h1, section > h2, section > h3, section > h4, section > h5, section > h6 {
+    font-family: var(--font-family-title);
+  }
+  
